@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab7-2</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Popular cat names</h1>
+        <p>The popularity of cat names differs by nation, even nations with the same language. The ranking of most
+            popular cat names can be assessed, in particular, from pet insurance registrations,
+            microchip registrations, and breed registries.</p>
+
+        <h3>List of cat names</h3>
+        <div class="col">
+            <img src="cat1.jpg" style="width:100%;">
+            <p class="cat">Meimei</p>
+        </div>
+        <div class="col">
+            <img src="cat2.jpg" style="width:100%;">
+            <p class="cat">linly</p>
+        </div>
+        <div class="col">
+            <img src="cat3.jpg" style="width:100%;">
+            <p class="cat">lifa</p>
+        </div>
+        <div class="col">
+            <img src="cat4.jpg" style="width:100%;">
+            <p class="cat">lajiao</p>
+        </div>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .col {
+            float: left;
+            width: 40%;
+            padding: 5px;
+            background: black;
+            margin: 1%;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        .cat {
+            color: aliceblue;
+            text-align: center;
+            padding: 0;
+            margin: 0%;
+
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+
+</html>

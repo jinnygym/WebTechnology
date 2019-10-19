@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="pid" onclick="window.location.href = 'http://10.0.15.12/';">Web Technology</p>
+    <form>
+        <p>
+            <input value="Font [+]" type="button" onclick="Font1();" />
+            <input value="Font [-]" type="button" onclick="Font2();" />
+
+            <input value="Color [+]" type="button" onclick="Color1();" />
+            <input value="Color [-]" type="button" onclick="Color2();" />
+        </p>
+    </form>
+    
+    
+    <script>
+        let color = ["blue", "orange", "green", "purple"];
+        let num = 0;
+        let count = 40;
+        function Font1() {
+            var p = document.getElementById("pid");
+            p.style.fontSize = (count+=4) + "pt";
+        }
+        function Font2() {
+            var p = document.getElementById("pid");
+            p.style.fontSize = (count-=4) + "pt";
+        }
+        function Color1() {
+            num += 1;
+            num %= 4;
+            document.getElementById("pid").style.color = color[num];
+            
+        }
+        function Color2() {
+            if (num==0){
+                num = 3;
+            }
+            else {
+                num -= 1;
+            }
+            document.getElementById("pid").style.color = color[num];
+        }
+    </script>
+</body>
+
+</html>

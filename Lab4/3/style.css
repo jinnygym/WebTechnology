@@ -1,0 +1,23 @@
+body{
+    font-family: 'Kanit', sans-serif;
+}
+h2{
+    text-align: center;
+    color: rgb(122, 10, 126);
+    
+}
+th{
+    background: rgb(241, 193, 193);
+    padding: 0.1em 1em 0.1em 1em;
+    font-weight: 400;
+
+}
+td {
+    text-align: center;
+    background: #eee;
+    display: table-cell;
+    vertical-align: inherit;
+}
+button{
+    background: #eee;
+}

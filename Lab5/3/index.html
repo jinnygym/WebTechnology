@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab5</title>
+</head>
+
+<body>
+    <script>
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                xmlShow(this);
+            }
+        };
+        xhttp.open("GET", "employee.xml", true);
+        xhttp.send();
+        function xmlShow(xml) {
+            let xmlDoc = xml.responseXML;
+
+            //New Element
+            let edt = xmlDoc.getElementsByTagName("book");
+            let xLen = edt.length;
+            
+            for (let i = 0; i < xLen; i++) {
+                let newEle = xmlDoc.createElement("edition");
+                if (i % 2 == 0){
+                    let newText = xmlDoc.createTextNode("THA");
+                    newEle.appendChild(newText);
+                    edt[i].appendChild(newEle);
+                }
+                else{
+                    let newText = xmlDoc.createTextNode("LON");
+                    newEle.appendChild(newText);
+                    edt[i].appendChild(newEle);
+                }
+                
+                // let newText = xmlDoc.createTextNode("TPY");
+                
+                
+            }
+
+            let txt = "";
+            let x = xmlDoc.getElementsByTagName("num");
+            let gen = xmlDoc.getElementsByTagName("title");
+            let last = xmlDoc.getElementsByTagName("lastname");
+            let name = xmlDoc.getElementsByTagName("name");
+            let job = xmlDoc.getElementsByTagName("job");
+            let add = xmlDoc.getElementsByTagName("address");
+            let edit =xmlDoc.getElementsByTagName("edition");
+            
+            for (let i = 0; i < x.length; i++) {
+                txt += x[i].childNodes[0].nodeValue + " "
+                    + gen[i].childNodes[0].nodeValue + " "
+                    + last[i].childNodes[0].nodeValue + " "
+                    + name[i].childNodes[0].nodeValue + " " + "( "
+                    + job[i].childNodes[0].nodeValue + " )" + ", "
+                    + "<i>" + add[i].childNodes[0].nodeValue + "</i>" + ", " 
+                    + edit[i].childNodes[0].nodeValue + "<br>"; 
+            }
+            document.write(txt);
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body{
+    font-family: 'Kanit', sans-serif;
+}
+td {
+    border-block-end: 1px solid black;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+}

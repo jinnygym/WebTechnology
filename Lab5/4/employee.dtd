@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE note [
+<!ELEMENT bookstore (to,from,heading,body)>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT job (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+]>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book>
+        <num>1</num>
+        <title>Ms.</title>
+        <lastname>Davolio</lastname>
+        <name>Nancy</name>
+        <job>Sales Representative</job>
+        <address>507 - 20th Ave. E. Apt. 2A</address>
+    </book>
+
+    <book>
+        <num>2</num>
+        <title>Mr.</title>
+        <lastname>Fuller</lastname>
+        <name>Anddrew</name>
+        <job>Vice President, Sale</job>
+        <address>908 W. Capital Way</address>
+    </book>
+
+    <book>
+        <num>3</num>
+        <title>Ms.</title>
+        <lastname>Leverling</lastname>
+        <name>Janet</name>
+        <job>Sales Representative</job>
+        <address>722 Moss Bay Blvd.</address>
+    </book>
+
+    <book>
+        <num>4</num>
+        <title>Mrs.</title>
+        <lastname>Peacock</lastname>
+        <name>Margaret</name>
+        <job>Sales Representative</job>
+        <address>4110 Old Redmond Rd.</address>
+    </book>
+
+    <book>
+        <num>5</num>
+        <title>Mr.</title>
+        <lastname>Buchanan</lastname>
+        <name>Steven</name>
+        <job>Sales Manager</job>
+        <address>14 Garrett Hill</address>
+    </book>
+
+    <book>
+        <num>6</num>
+        <title>Mr.</title>
+        <lastname>Suyama</lastname>
+        <name>Michael</name>
+        <job>Sales Representative</job>
+        <address>Coventry House Miner Rd.</address>
+    </book>
+
+    <book>
+        <num>7</num>
+        <title>Mr.</title>
+        <lastname>King</lastname>
+        <name>Robert</name>
+        <job>Sales Representative</job>
+        <address>Edgeham Hollow Winchester Way</address>
+    </book>
+
+    <book>
+        <num>8</num>
+        <title>Ms.</title>
+        <lastname>Callahan</lastname>
+        <name>Laura</name>
+        <job>Inside Sales Coordinator</job>
+        <address>4726 - 11th Ave. N.E.</address>
+    </book>
+
+    <book>
+        <num>9</num>
+        <title>Ms.</title>
+        <lastname>Dodsworth</lastname>
+        <name>Anne</name>
+        <job>Sales Representative</job>
+        <address>7 Houndstooth Rd.</address>
+    </book>
+
+</bookstore>

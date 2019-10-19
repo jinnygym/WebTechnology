@@ -1,0 +1,18 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+footer{
+    font-size: 20px;
+}

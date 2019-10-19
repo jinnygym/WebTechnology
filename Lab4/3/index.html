@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab4/3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+    <h2>ลงทะเบียนร่วมงาน</h2>
+    <input type="text" id="val1" value="" placeholder="รหัสนักศึกษา" minlength="2" maxlength="8" />
+    <input type="text" id="val2" value="" placeholder="ชื่อ" minlength="2" maxlength="30" />
+    <input type="text" id="val3" value="" placeholder="นามสกุล" minlength="2" maxlength="30" />
+    <button type="button" onclick="sumValues()">ลงทะเบียน</button>
+    <p id="re"> </p>
+
+    
+    <table id="table0">
+        <tr>
+            <th>ลำดับที่</th>
+            <th>รหัสนักศึกษา</th>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+        </tr>
+    </table>
+    </center>
+    <script>
+        let count = 1;
+        function sumValues() {
+            let table = document.getElementById('table0');
+            let row = table.insertRow(-1); //Row position 0,1,2,...,n -1 = last
+            let cell, text;
+            let Value1 = document.getElementById('val1').value;
+            let Value2 = document.getElementById('val2').value;
+            let Value3 = document.getElementById('val3').value; 
+                    // for (let i = 0; i < 4; i++) {
+                    //     cell = row.insertCell(-1);
+                    //     if(i==0){
+                    //        text = count;
+                    //     }
+                    //     if(i==1){
+                    //         text = Value1;
+                    //     }
+                    //     if(i==2){
+                    //         text = Value2;
+                    //     }
+                    //     if(i==3){
+                    //         text = Value3;
+                    //     }
+                    //    cell.appendChild(document.createTextNode(text));
+                        
+                    // }
+                    //     count++;
+                    cell = row.insertCell(-1);
+                    text = row.rowIndex;
+                    cell.appendChild(document.createTextNode(text))
+
+                    cell = row.insertCell(-1);
+                    text = row.rowIndex;
+                    cell.appendChild(document.createTextNode(Value1))
+
+                    cell = row.insertCell(-1);
+                    text = row.rowIndex;
+                    cell.appendChild(document.createTextNode(Value2))
+
+                    cell = row.insertCell(-1);
+                    text = row.rowIndex;
+                    cell.appendChild(document.createTextNode(Value3))
+        }
+    </script>
+</body>
+</html>

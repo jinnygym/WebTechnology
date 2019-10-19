@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jornor Form</title>
+</head>
+<body>
+    <div class="container-login100">
+    <div class="container">
+    <form action="" id="myForm" onsubmit="return validateForm()" method="post" >
+        <p><label for='IDCard'>หมายเลขบัตรประชาชน:</label><br>
+            <input type="text" id="IDCard" name="IDCard" maxlength="13"/></p>
+        <p><label for='First'>คำนำหน้า:</label><br>
+            <input type="radio" name="First" value="M" /> นาย
+            <input type="radio" name="First" value="W" /> นาง
+            <input type="radio" name="First" value="MS" /> นางสาว
+            <input type="radio" name="First" value="B" /> เด็กชาย
+            <input type="radio" name="First" value="G" /> เด็กหญิง <br />
+        <p><label for='FirstName'>ชื่อ­:</label><br>
+            <input type="text" id="FirstName" name="FirstName" minlength="2" maxlength="30"/></p>
+        <p><label for='LastName'>นามสกุล:</label><br>
+            <input type="text" id="LastName" name="LastName" minlength="2" maxlength="30"/></p>
+        <p><label for='Address'>ที่อยู่:</label></p>
+            <input id="Address" name="Address" minlength="5" type="text" /><br>
+            <input id="Address" name="Address2" minlength="5" type="text"/>
+        <p><label for='Address'>ตำบล/แขวง:</label><br>
+            <input type="text" id="Address" name="Address" minlength="2"/></p>
+        <p><label for='Address'>อำเภอ/เขต:</label><br>
+            <input type="text" id="Address" name="Address" /></p>
+        
+            <p><label for='Province'>จังหวัด:</label><br>
+            <select id="Province" class="selid" name="Province">
+                <option value="000" selected="selected">[choose yours]</option>
+                <option value="001">กระบี่</option>
+                <option value="002">กรุงเทพมหานคร</option>
+                <option value="003">กาญจนบุรี</option>
+                <option value="004">กาฬสินธุ์</option>
+                <option value="005">กำแพงเพชร</option>
+                <option value="006">ขอนแก่น</option>
+                <option value="007">จันทบุรี</option>
+                <option value="008">ฉะเชิงเทรา</option>
+                <option value="009">ชลบุรี</option>
+                <option value="010">ชัยนาท</option>
+                <option value="011">ชัยภูมิ</option>
+                <option value="012">ชุมพร</option>
+                <option value="013">เชียงราย</option>
+                <option value="014">เชียงใหม่</option>
+                <option value="015">ตรัง</option>
+                <option value="016">ตราด</option>
+                <option value="017">ตาก</option>
+                <option value="018">นครนายก</option>
+                <option value="019">นครปฐม</option>
+                <option value="020">นครพนม</option>
+                <option value="021">นครราชสีมา</option>
+                <option value="022">นครศรีธรรมราช</option>
+                <option value="023">นครสวรรค์</option>
+                <option value="024">นนทบุรี</option>
+                <option value="025">นราธิวาส</option>
+                <option value="026">น่าน</option>
+                <option value="027">บึงกาฬ</option>
+                <option value="028">บุรีรัมย์</option>
+                <option value="029">ปทุมธานี</option>
+                <option value="030">ประจวบคีรีขันธ์</option>
+                <option value="031">ปราจีนบุรี</option>
+                <option value="032">ปัตตานี</option>
+                <option value="033">พระนครศรีอยุธยา</option>
+                <option value="034">พะเยา</option>
+                <option value="035">พังงา</option>
+                <option value="036">พัทลุง</option>
+                <option value="037">พิจิตร</option>
+                <option value="038">พิษณุโลก</option>
+                <option value="039">เพชรบุรี</option>
+                <option value="040">เพชรบูรณ์</option>
+                <option value="041">แพร่</option>
+                <option value="042">ภูเก็ต</option>
+                <option value="043">มหาสารคาม</option>
+                <option value="044">มุกดาหาร</option>
+                <option value="045">แม่ฮ่องสอน</option>
+                <option value="046">ยโสธร</option>
+                <option value="047">ยะลา</option>
+                <option value="048">ร้อยเอ็ด</option>
+                <option value="049">ระนอง</option>
+                <option value="050">ระยอง</option>
+                <option value="051">ราชบุรี</option>
+                <option value="052">ลพบุรี</option>
+                <option value="053">เลย</option>
+                <option value="054">ลำปาง</option>
+                <option value="055">ลำพูน</option>
+                <option value="056">ศรีสะเกษ</option>
+                <option value="057">สกลนคร</option>
+                <option value="058">สงขลา</option>
+                <option value="059">สตูล</option>
+                <option value="060">สมุทรปราการ</option>
+                <option value="061">สมุทรสงคราม</option>
+                <option value="062">สมุทรสาคร</option>
+                <option value="063">สระแก้ว</option>
+                <option value="064">สระบุรี</option>
+                <option value="065">สิงห์บุรี</option>
+                <option value="066">สุโขทัย</option>
+                <option value="067">สุพรรณบุรี</option>
+                <option value="068">สุราษฏร์ธานี</option>
+                <option value="069">สุรินทร์</option>
+                <option value="070">หนองคาย</option>
+                <option value="071">หนองบัวลำภู</option>
+                <option value="072">อ่างทอง</option>
+                <option value="073">อำนาจเจริญ</option>
+                <option value="074">อุดรธานี</option>
+                <option value="075">อุตรดิตถ์</option>
+                <option value="076">อุทัยธานี</option>
+                <option value="077">อุบลราชธานี</option>
+            </select> </p>
+        <p><label for='Address'>รหัสไปรษณีย์:</label><br>
+            <input type="text" id="Address" name="Address" minlength="4" maxlength="5" /></p>
+        <p><label for='Phone'>เบอร์โทรศัพท์:</label><br>
+            <input type="text" id="Phone" name="Phone" minlength="9" maxlength="10"/></p>
+
+
+        <p><input type="submit" name="submit" value="สมัครสมาชิก"></p>
+        </form>
+        </div>
+        </div>
+        <script> 
+             let fname = document.forms["myForm"]["FirstName"].value;
+                if (fname.length < 3 ) {
+                alert("Firstname must be filled out");
+                return false;
+                }
+                let country = document.forms["myForm"]["Country"].value;
+                if (country =="000" ) {
+                alert("Country must be selected");
+                return false;
+                }
+
+        </script>
+</body>
+</html>

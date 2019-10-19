@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab4/2</title>
+</head>
+
+<body>
+
+    <p><label for='Value1'>Value 1­:</label>
+        <input type="number" id="val1" value="" /></p>
+    <p><label for='Value2'>Value 2­:</label>
+        <input type="number" id="val2" value="" /></p>
+    <button type="button" onclick="sumValues()">Calculate</button>
+    <p id="re"> </p>
+
+
+    <script>
+        function sumValues() {
+
+            let Value1 = document.getElementById('val1').value;
+            let Value2 = document.getElementById('val2').value;
+            let res = parseInt(Value1) + parseInt(Value2);
+            document.getElementById('re').innerHTML = 'Result : ' + res;
+            let txt = Value1 + " + " + Value2 + " = " + res;
+            let x = document.createElement("P");
+            let t = document.createTextNode(txt);
+            x.appendChild(t);
+            document.body.appendChild(x);
+
+        }
+    </script>
+</body>
+
+</html>

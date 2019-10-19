@@ -1,0 +1,79 @@
+body{
+    font-family: 'Sarabun', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+h2{
+    color: #661d91;
+    text-align: center;
+}
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg,#c850c0,#4158d0);
+    background: -o-linear-gradient(-135deg,#c850c0,#4158d0);
+    background: -moz-linear-gradient(-135deg,#c850c0,#4158d0);
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+}
+.container {
+    background: white;
+    padding: 5em;
+    border-radius: 4px;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 25px auto; 
+}
+
+form#myForm input[type=text] {
+    margin-right: -5px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px #9e9e9e9e solid;
+    width: 95%;
+    padding:6px;
+    margin-top: 8px;
+    height: 20px;
+}
+
+form#myForm input[type=submit] {
+    background: #9053c7;
+    outline-color: #c850c0;
+    border:none;
+    padding: 10px 12px;
+    color: aliceblue;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: opacity 2s linear;
+}
+
+form#myForm input[type=text]:active,
+form#myForm input[type=text]:focus {
+    outline: none;
+    border-color: #c850c0;
+
+}
+
+form#myForm input[type=submit]:hover {
+    cursor: pointer;
+    opacity: .6;
+    transition: visibility 0s 2s, .6 2s linear;
+}
+
+form#myFrom select.selid {
+    width: 100%;
+
+}

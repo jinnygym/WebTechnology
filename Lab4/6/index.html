@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <title>Lab4/6</title>
+</head>
+
+<body>
+    <h1>เพิ่มผลไม้</h1>
+    <p>
+    <button type="button" onclick="banana()">กล้วย</button>
+    <button type="button" onclick="orange()">ส้ม</button>
+    <button type="button" onclick="watermelon()">แตงโม</button>
+    <button type="button" onclick="grape()">องุ่น</button>
+    </p>
+    <hr>
+    <table >
+    </table>
+        
+
+    <script>
+        let count = 0;
+        
+        function banana() {
+            if(count % 5 == 0){
+            let br = document.createElement("br");
+            document.body.appendChild(br);
+            }
+            let s = document.createElement('img');
+            s.setAttribute("src", "f1.png");
+            document.body.appendChild(s);
+            count += 1;
+            
+        }
+        function orange() {
+            if(count % 5 == 0){
+            let br = document.createElement("br");
+            document.body.appendChild(br);
+            }
+            let s = document.createElement('img');
+            s.setAttribute("src", "f2.png");
+            document.body.appendChild(s);
+            count += 1;
+        }
+        function watermelon() {
+            if(count % 5 == 0){
+            let br = document.createElement("br");
+            document.body.appendChild(br);
+            }
+            let s = document.createElement('img');
+            s.setAttribute("src", "f3.png");
+            document.body.appendChild(s);
+            count += 1;
+        }
+        function grape() {
+            if(count % 5 == 0){
+            let br = document.createElement("br");
+            document.body.appendChild(br);
+            }
+            let s = document.createElement('img');
+            s.setAttribute("src", "f4.png");
+            document.body.appendChild(s);
+            count += 1;
+        }
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab6-1</title>
+</head>
+
+<body>
+    <script>
+        let requestURL = 'super.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                var myJSON = JSON.parse(request.responseText);
+                myFunction(myJSON);
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+        function myFunction(myObj) {
+
+            // document.write(myObj[0] + ' ');
+            // document.write('(' + myObj[1] + ') ');
+            // document.write('is a ' + myObj[2] + ', ');
+            // document.write(myObj[3] + '<br>');
+
+
+            for (let i = 0; i < myObj.length; i++) {
+                document.write([i+1] + ' ');
+                document.write('<b>' + myObj[i].name + '</b>' +' ');
+                document.write('(' + myObj[i].gender + ') ');
+                document.write('is a ' + myObj[i].position + ', ');
+                document.write(myObj[i].address + '<br>');
+            }
+        }
+    </script>
+</body>
+
+</html>
